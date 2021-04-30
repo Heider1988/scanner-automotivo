@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:id="@+id/mainscreen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            tools:context=".MainActivity" >
+
+
+                <TextView
+                    android:id="@+id/Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desconectado"
+                    android:textColor="#EBDDE2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_marginTop="2dp"
+            android:id="@+id/mainscreen1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            tools:context=".MainActivity" >
+
+                <TextView
+                    android:id="@+id/cargaMotor_Texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_toLeftOf="@+id/cargaMotor"
+                    android:gravity="left"
+                    android:text="Carga do Motor: "
+                    android:textColor="#aaa"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cargaMotor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0 %"
+                    android:textColor="#99FFFF"
+                    android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_marginTop="2dp"
+            android:id="@+id/mainscreen2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            tools:context=".MainActivity" >
+
+                <TextView
+                    android:id="@+id/tempAgua_Texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/Center_text"
+                    android:gravity="left"
+                    android:text="Temperatura da Água:  "
+                    android:textColor="#aaa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Center_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="left"
+                    android:text=" "
+                    android:textColor="#aaa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tempAgua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Center_text"
+                    android:gravity="center"
+                    android:text="0 C°"
+                    android:textColor="#99FFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_marginTop="2dp"
+            android:id="@+id/mainscreen3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            tools:context=".MainActivity" >
+
+
+                <TextView
+                    android:id="@+id/volt_Texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Volts da Bateria: "
+                    android:textColor="#aaa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Volt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/volt_Texto"
+                    android:gravity="center"
+                    android:text="0 V"
+                    android:textColor="#99FFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_marginTop="2dp"
+            android:id="@+id/mainscreen4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            tools:context=".MainActivity" >
+
+                <TextView
+                    android:id="@+id/tempAr_Texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:text="Temperatura do Ar do Motor: "
+                    android:textColor="#aaa"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tempAr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tempAr_Texto"
+                    android:gravity="center"
+                    android:text="0 Cº"
+                    android:textColor="#99FFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_marginTop="2dp"
+            android:id="@+id/mainscreen5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background"
+            tools:context=".MainActivity" >
+
+
+                <TextView
+                    android:id="@+id/rotacao_texto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:text="Rotação do Motor: "
+                    android:textColor="#aaa"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Rotacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rotacao_texto"
+                    android:gravity="center"
+                    android:text="0 RPM"
+                    android:textColor="#99FFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+</android.support.design.widget.AppBarLayout>
